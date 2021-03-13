@@ -24,9 +24,15 @@ DCT stands for Discrete Cosine Transform. It is a type of fast computing fourier
 
 The DCT Equation for 2D DCT has been given in the image below. P(x,y) denotes the pixels in the input image here. 
 
+![Equation 1](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/dct_equations/equation_1.JPG?raw=true)
+
 However, when we are dealing with JPEG compression, we always take N = 8, which modifies the equation and gets us the equation below:
 
+![Equation 2](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/dct_equations/equation_2.JPG?raw=true)
+
 But applying this complex scalar computation at every point of 8*8 block of image can be time consuming, hence we can simplify the equations further to come up with a vector representation of the same. The vector representation of the same can be given as follows:
+
+![Equation 3](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/dct_equations/equation_3.JPG?raw=true)
 
 We compute the DCT by applying the following formula – 
 D = DCT_Matrix @ Image_Block @ DCT_Matrix.T
@@ -37,7 +43,7 @@ The human visual system is more perceptive to low frequency components of an Ima
 
 **Experimental Results:**
 
-Some of the Experimental Results have been displayed below 
+Some of the Experimental Results have been displayed below: 
 
 ![Experimental Result 1](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/result_1.JPG?raw=true)
 
