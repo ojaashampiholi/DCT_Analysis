@@ -37,8 +37,15 @@ The human visual system is more perceptive to low frequency components of an Ima
 
 **Experimental Results:**
 
+Some of the Experimental Results have been displayed below 
+
 ![Experimental Result 1](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/result_1.JPG?raw=true)
 
+We can see that the input image of size (538,897,3) has been resized to (480,480,3) and then provided to DCT Function channel by channel to get the size (5,5,3481) for each channel, which means that when we compare the input pixels to processed input pixels, we have achieved compression of about 62%.
+
+![Experimental Result 4](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/result_4.JPG?raw=true)
+
+We can see that the input image of size (1200,1920,3) has been resized to (128,128,3) and then provided to DCT Function channel by channel to get the size (5,5,225) for each channel, which means that when we compare the input pixels to processed input pixels, we have achieved compression of about 66%.
 
 **Applications:**
 
