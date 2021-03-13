@@ -50,8 +50,9 @@ The human visual system is more perceptive to low frequency components of an Ima
 As a Data Scientist with background in Electronics and Telecommunications which primarily focused on Signal Processing, I have seen and worked the first two parts mentioned in the applications section. My goal eventually is to implement the third part now.
 
 References:
+
 https://www.math.cuhk.edu.hk/~lmlui/dct.pdf
+
 https://en.wikipedia.org/wiki/Lossless_compression
+
 http://fourier.eng.hmc.edu/e161/lectures/dct/node1.html
-
-
