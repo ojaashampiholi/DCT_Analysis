@@ -9,7 +9,7 @@ DCT stands for Discrete Cosine Transform. It is a type of fast computing fourier
 **Steps for Implementation of DCT for Image Compression:**
 •	If we have multichannel image, we need to apply the algorithm individually to every channel. We must convert RGB Image to the equivalent YCbCr format before we can do DCT processing. 
 
-•	Image is broken into N*N blocks. We take N=8 here because that is the JPEG Algorithm standard.
+•	Image is broken into (N,N) blocks. We take N=8 here because that is the JPEG Algorithm standard.
 
 •	Next, DCT is applied to every block serially.
 
@@ -17,7 +17,7 @@ DCT stands for Discrete Cosine Transform. It is a type of fast computing fourier
 
 •	A subset of the quantized blocks is stored into an array from where it can be picked up for further processing.
 
-•	We can apply IDCT to the quantized blocks and then arrange the 8*8 blocks in serial order to get the YCbCr image, which can then be converted to RGB to get the original image in the compressed form.
+•	We can apply IDCT to the quantized blocks and then arrange the (8,8) blocks in serial order to get the YCbCr image, which can then be converted to RGB to get the original image in the compressed form.
 
 
 **Image Compression Algorithm Implementation:**
@@ -30,16 +30,16 @@ However, when we are dealing with JPEG compression, we always take N = 8, which 
 
 ![Equation 2](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/dct_equations/equation_2.JPG?raw=true)
 
-But applying this complex scalar computation at every point of 8*8 block of image can be time consuming, hence we can simplify the equations further to come up with a vector representation of the same. The vector representation of the same can be given as follows:
+But applying this complex scalar computation at every point of (8,8) block of image can be time consuming, hence we can simplify the equations further to come up with a vector representation of the same. The vector representation of the same can be given as follows:
 
 ![Equation 3](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/dct_equations/equation_3.JPG?raw=true)
 
 We compute the DCT by applying the following formula – 
 D = DCT_Matrix @ Image_Block @ DCT_Matrix.T
 
-The quantization block for 8*8 DCT has been coded directly into the function. The user can however choose the rate of compression that is needed according to the further application. 
+The quantization block for (8,8) DCT has been coded directly into the function. The user can however choose the rate of compression that is needed according to the further application. 
 
-The human visual system is more perceptive to low frequency components of an Image in comparison to high frequency components. Hence, we can easily discard the high frequency components from the image and still maintain most of the information content in the image. After quantization, the processed array which is of the size 8*8, can be reduced to a lower dimension. We are taking the 5*5 subset of the block here, which still retains about 95% of the information, while reducing the size by 60.9% (1 – (25/64)). This also helps us to achieve an overall compression rate between 60% and 67% depending on the size of the input image.
+The human visual system is more perceptive to low frequency components of an Image in comparison to high frequency components. Hence, we can easily discard the high frequency components from the image and still maintain most of the information content in the image. After quantization, the processed array which is of the size (8,8), can be reduced to a lower dimension. We are taking the (5,5) subset of the block here, which still retains about 95% of the information, while reducing the size by 60.9% (1 – (25/64)). This also helps us to achieve an overall compression rate between 60% and 67% depending on the size of the input image.
 
 **Experimental Results:**
 
