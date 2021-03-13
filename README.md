@@ -37,6 +37,8 @@ The human visual system is more perceptive to low frequency components of an Ima
 
 **Experimental Results:**
 
+![Experimental Result 1](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/result_1.JPG?raw=true)
+
 
 **Applications:**
 
