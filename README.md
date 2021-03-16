@@ -59,6 +59,8 @@ We can see that the input image of size (1200,1920,3) has been resized to (128,1
 
 •	Run the imageCompression.py on shell.
 
+python imageCompression.py "path_to_image.jpg" resize_height resize_width
+
 ![Running .py file on Shell](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/runInstructions.JPG?raw=true)
 
 **Applications:**
