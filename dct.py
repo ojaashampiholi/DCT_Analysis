@@ -133,24 +133,13 @@ def processImage(url, resize_height=480, resize_width=480):
     print("Compression Rate Achieved is", getCompressionRate(Y, processedY))
     return processedY, processedCb, processedCr
 
-# print("------------------------------------------------------------")
-# print("Done Reading all helper functions!")
-# print("------------------------------------------------------------")
-# url = 'test_images/naruto.jpg'
-# print("Processing with Naruto Image")
-# _,_,_ = processImage(url, resize_height=480, resize_width=480)
-
-
 
 if __name__== "__main__":
     
     if(len(sys.argv) != 4):
         raise Exception('Format: python dct.py image_url resize_height resize_width') 
     url, resize_height, resize_width = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
-    # print("------------------------------------------------------------")
-    # print("Done Reading all helper functions!")
     print("------------------------------------------------------------")
-    # url = 'test_images/naruto.jpg'
     print("Processing with Input Image")
     _,_,_ = processImage(url, resize_height, resize_width)
 
