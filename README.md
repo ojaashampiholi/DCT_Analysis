@@ -53,6 +53,13 @@ We can see that the input image of size (538,897,3) has been resized to (480,480
 
 We can see that the input image of size (1200,1920,3) has been resized to (128,128,3) and then provided to DCT Function channel by channel to get the size (5,5,225) for each channel, which means that when we compare the input pixels to processed input pixels, we have achieved compression of about 66%.
 
+**Steps to Use:**
+
+•	Clone the git repository using the link https://github.com/ojaashampiholi/DCT_Analysis.git
+
+•	Run the imageCompression.py on shell.
+
+•	 
 **Applications:**
 
 •	The images can be saved in the compressed format and can be reconverted to the RGB version when they must be displayed.
