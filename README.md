@@ -59,7 +59,8 @@ We can see that the input image of size (1200,1920,3) has been resized to (128,1
 
 •	Run the imageCompression.py on shell.
 
-•	 
+![Running .py file on Shell](https://github.com/ojaashampiholi/DCT_Analysis/blob/main/results/runInstructions.JPG?raw=true)
+
 **Applications:**
 
 •	The images can be saved in the compressed format and can be reconverted to the RGB version when they must be displayed.
